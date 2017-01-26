@@ -19,7 +19,6 @@ var FundList = React.createClass ({
     return (
       <div id="extra-info">
         <h5>Get Fund Info For:</h5>
-        <ul>
           <li className="list-options" onClick={() => this.showDataChoices("Allan Gray Equity Fund")}><a>Allan Gray Equity Fund</a></li>
           <li className="list-options" onClick={() => this.showDataChoices("Cadiz Mastermind Fund")}><a>Cadiz Mastermind Fund</a></li>
           <li className="list-options" onClick={() => this.showDataChoices("Investec Value Fund")}><a>Investec Value Fund</a></li>
@@ -35,7 +34,6 @@ var FundList = React.createClass ({
           <li className="list-options" onClick={() => this.showDataChoices("Absa Smart Alpha Equity Fund")}><a>Absa Smart Alpha Equity Fund</a></li>
           <li className="list-options" onClick={() => this.showDataChoices("Nedgroup Inv Rainmaker Fund")}><a>Nedgroup Inv Rainmaker Fund</a></li>
           <li className="list-options" onClick={() => this.showDataChoices("Sanlam Investment Management Value Fund")}><a>Sanlam Investment Management Value Fund</a></li>
-        </ul>
       </div>
     );
   }
