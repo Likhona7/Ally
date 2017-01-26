@@ -42,64 +42,30 @@ var Input = React.createClass ({
         this.state.messages.push(extra_message);
         message.message = <Options />;
       }
+      else if (message.message === "show_accounts")
+      {
+        message.message = <FundList />;
+      }
+      else if (/show_data/.test(message.message))
+      {
+        var msg_split = message.message.split(":");
+        message.message = <DataList account={msg_split[1]}/>;
+      }
+
       this.state.messages.push(message);
       var elem = <MessageHistory messages={this.state.messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
 
-    socket.on("client-to-self", (msg) => {
-      var list_to_show = null;
-      if (msg.message === "fund_list")
-      {
-        list_to_show = <FundList />;
-
-        let extra_message = {
-          message: "List my funds",
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
-
-        let message = {
-          message: list_to_show,
-          from: "server",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(message);
-      }
-      else if (msg.message === "data_list")
-      {
-        list_to_show = <DataList account={msg.account_choice} />;
-
-        let extra_message = {
-          message: "List my data options for " + msg.account_choice,
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
-
-        let message = {
-          message: list_to_show,
-          from: "server",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(message);
-      }
-      else if (msg.message === "send_request")
-      {
-        let extra_message = {
-          message: "Give me the " + msg.data + " for my " + msg.account_choice,
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
+    socket.on("client-to-self", (msg) =>
+    {
+      let message = {
+        message: msg,
+        from: "user",
+        time: timer.chaTime()
       }
 
+      this.state.messages.push(message);
       var elem = <MessageHistory messages={this.state.messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
@@ -137,9 +103,6 @@ var Input = React.createClass ({
 
     // Clear user input after emitting to socket
     this.setState( {inputValue: ""} );
-    this.state.messages.push(message);
-    var elem = <MessageHistory messages={this.state.messages} />;
-    ReactDOM.render(elem, document.getElementById("message_box"));
   },
 
   handleChange(event) {
@@ -152,15 +115,15 @@ var Input = React.createClass ({
       <div className="row">
         <div className="col-xs-1"></div>
         <div className="col-xs-10">
-          <div className="input-box">
-                <input className=" Text-field"
+          <div className="row">
+                <input className="col-xs-10 Text-field"
                     placeholder="Type message..." id="usr_input"
                     type="text" value={this.state.inputValue}
                     onChange={this.handleChange} onKeyPress={this.onKeyPress}/>
                 <button className="mic-button" onClick={this.onSend}><img src={mic}/></button>
           </div>
         </div>
-
+        <div className="col-xs-1"></div>
       </div>
     )
   }

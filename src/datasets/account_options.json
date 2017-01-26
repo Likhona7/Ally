@@ -1,0 +1,62 @@
+[
+  {
+    "account": "Absa Smart Alpha Equity Fund",
+    "id": 1
+  },
+  {
+    "account": "Allan Gray Equity Fund",
+    "id": 2
+  },
+  {
+    "account": "Cadiz Mastermind Fund",
+    "id": 3
+  },
+  {
+    "account": "Coronation Top 20 Fund",
+    "id": 4
+  },
+  {
+    "account": "Counterpoint MET Value Fund",
+    "id": 5
+  },
+  {
+    "account": "Grindrod Equity Income Growth Fund",
+    "id": 6
+  },
+  {
+    "account": "Investec Value Fund",
+    "id": 7
+  },
+  {
+    "account": "Momentum Multifocus Fund of Funds",
+    "id": 8
+  },
+  {
+    "account": "Nedgroup Inv Rainmaker Fund",
+    "id": 9
+  },
+  {
+    "account": "Oasis Crescent Equity Fund",
+    "id": 10
+  },
+  {
+    "account": "Old Mutual Industrial Fund",
+    "id": 11
+  },
+  {
+    "account": "Old Mutual Top 40 Fund",
+    "id": 12
+  },
+  {
+    "account": "Sanlam Investment Management Resources Fund",
+    "id": 13
+  },
+  {
+    "account": "Sanlam Investment Management Value Fund",
+    "id": 14
+  },
+  {
+    "account": "Sygnia Value Fund",
+    "id": 15
+  }
+]

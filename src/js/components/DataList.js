@@ -9,20 +9,12 @@ var DataList = React.createClass ({
   {
     let message = {
       id: socket.id,
-      message: "send_request",
-      account_choice: this.props.account,
-      data: data_choice
+      message: data_choice,
+      from: "user",
+      time: timer.chaTime()
     };
-    socket.emit("client-to-self", message);
 
-    socket.emit("user_message",
-      {
-        message: this.props.account + " " + data_choice,
-        from: "user",
-        id: socket.id,
-        time: timer.chaTime()
-      }
-    );
+    socket.emit("user_message", message);
   },
 
   render()
@@ -32,25 +24,25 @@ var DataList = React.createClass ({
         <h5>In Account: {this.props.account}</h5>
         <h6>Give Me:</h6>
         <ul>
-          <li className="list-options" onClick={() => this.sendDataRequest("start unit balance")}><a>Start Unit Balance</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("start unit price")}><a>Start Unit Price</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("start market value")}><a>Start Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("start ratio")}><a>Start Ratio</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("total start market value")}><a>Total Start Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("start unallotted market value")}><a>Start Unallotted Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("total start market value incl unallotted")}><a>Total Start Market Value Incl Unallotted</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end unit balance")}><a>End Unit Balance</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end unit price")}><a>End Unit Price </a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end market value")}><a>End Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end ratio")}><a>End Ratio</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("total end market value")}><a>Total End Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end unallotted market value")}><a>End Unallotted Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("total end market value incl unallotted")}><a>Total End Market Value Incl Unallotted</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("currency symbol")}><a>Currency Symbol</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("currency name")}><a>Currency Name</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("account number")}><a>Account number</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("start net market value")}><a>Start Net Market Value</a></li>
-          <li className="list-options" onClick={() => this.sendDataRequest("end net market value")}><a>End Net Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(1)}><a>Start Unit Balance</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(2)}><a>Start Unit Price</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(3)}><a>Start Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(4)}><a>Start Ratio</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(5)}><a>Total Start Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(6)}><a>Start Unallotted Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(7)}><a>Total Start Market Value Incl Unallotted</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(8)}><a>End Unit Balance</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(9)}><a>End Unit Price</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(10)}><a>End Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(11)}><a>End Ratio</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(12)}><a>Total End Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(13)}><a>End Unallotted Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(14)}><a>Total End Market Value Incl Unallotted</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(15)}><a>Currency Symbol</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(16)}><a>Currency Name</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(17)}><a>Account Number</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(18)}><a>Start Net Market Value</a></li>
+          <li className="list-options" onClick={() => this.sendDataRequest(19)}><a>End Net Market Value</a></li>
         </ul>
       </div>
     );
