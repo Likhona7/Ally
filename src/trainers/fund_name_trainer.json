@@ -4,7 +4,27 @@
     "type": "Allan Gray Equity Fund"
   },
   {
+    "example": "AGEF",
+    "type": "Allan Gray Equity Fund"
+  },
+  {
+    "example": "AGE",
+    "type": "Allan Gray Equity Fund"
+  },
+  {
+    "example": "AG",
+    "type": "Allan Gray Equity Fund"
+  },
+  {
     "example": "cadiz mastermind",
+    "type": "Cadiz Mastermind Fund"
+  },
+  {
+    "example": "CMF",
+    "type": "Cadiz Mastermind Fund"
+  },
+  {
+    "example": "CM",
     "type": "Cadiz Mastermind Fund"
   },
   {
@@ -12,7 +32,19 @@
     "type": "Investec Value Fund"
   },
   {
+    "example": "IVF",
+    "type": "Investec Value Fund"
+  },
+  {
+    "example": "IV",
+    "type": "Investec Value Fund"
+  },
+  {
     "example": "old mutual 40",
+    "type": "Old Mutual Top 40 Fund"
+  },
+  {
+    "example": "OM 40",
     "type": "Old Mutual Top 40 Fund"
   },
   {
@@ -20,7 +52,31 @@
     "type": "Old Mutual Industrial Fund"
   },
   {
+    "example": "OMI",
+    "type": "Old Mutual Industrial Fund"
+  },
+  {
     "example": "sanlam investment management resources",
+    "type": "Sanlam Investment Management Resources Fund"
+  },
+  {
+    "example": "SIMRF",
+    "type": "Sanlam Investment Management Resources Fund"
+  },
+  {
+    "example": "SIMR",
+    "type": "Sanlam Investment Management Resources Fund"
+  },
+  {
+    "example": "SIR",
+    "type": "Sanlam Investment Management Resources Fund"
+  },
+  {
+    "example": "SR",
+    "type": "Sanlam Investment Management Resources Fund"
+  },
+  {
+    "example": "SRF",
     "type": "Sanlam Investment Management Resources Fund"
   },
   {
@@ -28,7 +84,27 @@
     "type": "Oasis Crescent Equity Fund"
   },
   {
+    "example": "OCEF",
+    "type": "Oasis Crescent Equity Fund"
+  },
+  {
+    "example": "OCE",
+    "type": "Oasis Crescent Equity Fund"
+  },
+  {
+    "example": "OC",
+    "type": "Oasis Crescent Equity Fund"
+  },
+  {
     "example": "sygnia",
+    "type": "Sygnia Value Fund"
+  },
+  {
+    "example": "SVF",
+    "type": "Sygnia Value Fund"
+  },
+  {
+    "example": "SV",
     "type": "Sygnia Value Fund"
   },
   {
@@ -36,7 +112,51 @@
     "type": "Momentum Multifocus Fund of Funds"
   },
   {
+    "example": "MMFOF",
+    "type": "Momentum Multifocus Fund of Funds"
+  },
+  {
+    "example": "MMFO",
+    "type": "Momentum Multifocus Fund of Funds"
+  },
+  {
+    "example": "MMF",
+    "type": "Momentum Multifocus Fund of Funds"
+  },
+  {
+    "example": "MMFF",
+    "type": "Momentum Multifocus Fund of Funds"
+  },
+  {
+    "example": "MM",
+    "type": "Momentum Multifocus Fund of Funds"
+  },
+  {
     "example": "grindrod income growth",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GEIGF",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GEIG",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GEI",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GE",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GEF",
+    "type": "Grindrod Equity Income Growth Fund"
+  },
+  {
+    "example": "GEIF",
     "type": "Grindrod Equity Income Growth Fund"
   },
   {
@@ -44,7 +164,35 @@
     "type": "Counterpoint MET Value Fund"
   },
   {
+    "example": "CMVF",
+    "type": "Counterpoint MET Value Fund"
+  },
+  {
+    "example": "CMV",
+    "type": "Counterpoint MET Value Fund"
+  },
+  {
+    "example": "CMF",
+    "type": "Counterpoint MET Value Fund"
+  },
+  {
+    "example": "CVF",
+    "type": "Counterpoint MET Value Fund"
+  },
+  {
     "example": "coronation 20",
+    "type": "Coronation Top 20 Fund"
+  },
+  {
+    "example": "CT 20 F",
+    "type": "Coronation Top 20 Fund"
+  },
+  {
+    "example": "CTF 20",
+    "type": "Coronation Top 20 Fund"
+  },
+  {
+    "example": "CTF",
     "type": "Coronation Top 20 Fund"
   },
   {
@@ -52,11 +200,55 @@
     "type": "Absa Smart Alpha Equity Fund"
   },
   {
+    "example": "ASAEF",
+    "type": "Absa Smart Alpha Equity Fund"
+  },
+  {
+    "example": "ASAE",
+    "type": "Absa Smart Alpha Equity Fund"
+  },
+  {
+    "example": "ASAF",
+    "type": "Absa Smart Alpha Equity Fund"
+  },
+  {
     "example": "nedgroup inv rainmaker",
     "type": "Nedgroup Inv Rainmaker Fund"
   },
   {
+    "example": "NIRF",
+    "type": "Nedgroup Inv Rainmaker Fund"
+  },
+  {
+    "example": "NIR",
+    "type": "Nedgroup Inv Rainmaker Fund"
+  },
+  {
+    "example": "NIF",
+    "type": "Nedgroup Inv Rainmaker Fund"
+  },
+  {
+    "example": "NI",
+    "type": "Nedgroup Inv Rainmaker Fund"
+  },
+  {
     "example": "sanlam investment management value",
+    "type": "Sanlam Investment Management Value Fund"
+  },
+  {
+    "example": "SIMVF",
+    "type": "Sanlam Investment Management Value Fund"
+  },
+  {
+    "example": "SIMV",
+    "type": "Sanlam Investment Management Value Fund"
+  },
+  {
+    "example": "SIVF",
+    "type": "Sanlam Investment Management Value Fund"
+  },
+  {
+    "example": "SVF",
     "type": "Sanlam Investment Management Value Fund"
   }
 ]

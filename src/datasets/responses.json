@@ -24,7 +24,7 @@
     "type": "StartMarketValue"
   },
   {
-    "response": "The Start Ratio for your {account} is {value} :)",
+    "response": "The Start Ratio for your {account} is {value}%",
     "type": "StartRatio"
   },
   {
@@ -52,7 +52,7 @@
     "type": "EndMarketValue"
   },
   {
-    "response": "The End Ratio for your {account} is {value} :)",
+    "response": "The End Ratio for your {account} is {value}%",
     "type": "EndRatio"
   },
   {

@@ -3,7 +3,7 @@ module.exports = {
   {
     var path = require("path");
     var fs = require("fs");
-    var corpus = String(fs.readFileSync(path.join(__dirname, "./corpus")));
+    var corpus = String(fs.readFileSync(path.join(__dirname, "./word.txt")));
     console.log("\nInitializing spellchecker!\n");
 
     /*

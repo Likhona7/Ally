@@ -92,9 +92,6 @@ function getDateTime() {
 
 
 
-
-
-
     return " [Year: "+year + " || " + "Month: "+month + " || " + "Day: "+day + " || " + "Hour: "+hour + " || " + "Minute: "+min + " || " + "Second: " + sec + " || " + "MiliSecond: "+mil + "]"
 
 }
@@ -178,7 +175,6 @@ function getFundName(msg_stem)
   for (var i = 0; i < fund_name_trainer.length; i++)
   {
     var similarity = getSimilarityCount(fund_name_trainer[i].example.tokenizeAndStem(true), msg_stem);
-
     if (similarity > best_similarity)
     {
       best_similarity = similarity;
@@ -369,7 +365,7 @@ module.exports = {
 
     // Where the final response to the user will be stored
     var final_response = "";
-    var msg = message.message;
+    var msg = message.message.toLowerCase();
 
     var CurrentTime = getDateTime();
     var NLP_To_File = 'User Message Sent: ' + CurrentTime + '\n\n';
@@ -498,7 +494,7 @@ module.exports = {
       logger_extInfo(NLP_To_File);
 
       final_response = final_response.replace(/\{account\}/g, fund_name_classification);
-      final_response = final_response.replace(/\{value\}/g, data_response);
+      final_response = final_response.replace(/\{value\}/g, Math.floor(data_response * 100) / 100);
 
       var NLP_To_File = "NLP_[Final Response After PregEx]: " + final_response + "\n";
       logger_extInfo(NLP_To_File);
