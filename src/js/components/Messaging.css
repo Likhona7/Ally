@@ -207,16 +207,15 @@ button{
   background:#c53146 none repeat scroll 0 0;
   border-radius: 12px;
   color: white;
-  display: inline-block;
   float: left;
-  margin-right: 70%;
+  margin-right: 20%;
   font-size: 15px;
   padding: 8px 16px;
   position: relative;
   padding: 8px 16px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 5pt;
+  margin-bottom: 1vh;
 }
 /*.ally_message::before{
   content: "";
@@ -234,15 +233,14 @@ button{
   background: #7f7f7f none repeat scroll 0 0;
   border-radius: 12px;
   color: white;
-  display: inline-block;
   font-size: 15px;
-  margin-left: 10%;
+  max-width: 38vw;
+  word-wrap: break-word;
   float: right;
   padding: 8px 16px;
   padding-left: 20px;
   padding-right: 16px;
-
-  margin-bottom: 5pt;
+  margin-bottom: 1vh;
 }
 
 .server{
