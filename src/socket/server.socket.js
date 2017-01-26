@@ -3,60 +3,91 @@ var app = require("express")();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 var nlp = require("../natural/server.nlp.js");
+var parse_options = require("./parse_options.js");
+
+var using_options = false;
+var account = null;
+var data = null;
 
 //  Define user message event handler
 io.on("connection", function(socket) {
   console.log("+++ New user connected.");
-  console.log("\tUserID:\t", socket.id);
+  console.log("UserID:\t", socket.id);
   console.log("");
   console.log("");
 
-  socket.on("user_message", function(msg) {
-    console.log("||| Start of \"socket.on('user_message')\" in",
-        "\"/src/socket/server.socket.js\" |||");
-    console.log("");
-    console.log("");
-
+  socket.on("user_message", function(msg)
+  {
     console.log(">>> New message from user to server.");
-    console.log("\tFrom UserID:\t", msg.id);
-    console.log("\tMessage:\t", msg.message);
+    console.log("From UserID:\t", msg.id);
+    console.log("Message:\t", msg.message);
     console.log("");
     console.log("");
+    var response = "unknown";
 
-    console.log("___ Calling \"processMessage()\" from",
-        "\"/src/socket/server.socket.js\" ___");
-    console.log("");
-    console.log("");
-    var response = nlp.processMessage(msg);
-    console.log("___ Returned call of \"processMessage()\" to",
-        "\"/src/socket/server.socket.js\" with response:\t", response, "___");
-    console.log("");
-    console.log("");
+    if (!using_options)
+    {
+      response = nlp.processMessage(msg);
+
+      if (response === "unknown")
+      {
+        using_options = true;
+      }
+    }
+    else
+    {
+      if (msg.message === "fund_list")
+      {
+        response = "show_accounts";
+      }
+      else if (!account)
+      {
+        account = parse_options.getAccountName(msg.message);
+        if (!account)
+        {
+          response = "Invalid Account Option Selected. Please ensure you " +
+            "entered the correct number.";
+        }
+        else
+        {
+          response = "show_data:" + account;
+        }
+      }
+      else if (!data)
+      {
+        data = parse_options.getDataRef(msg.message);
+        if (!data)
+        {
+          response = "Invalid Option Selected. Please ensure you entered " +
+            "the correct number.";
+        }
+      }
+
+      if (account && data)
+      {
+        using_options = false;
+        msg.message = account + " " + data;
+        response = nlp.processMessage(msg);
+
+        if (response === "unknown")
+        {
+          response = "I'm so sorry, but I'm having some trouble accessing the "
+            + "info you're looking for. Maybe try calling our CSC at " +
+            "0860 000 654";
+        }
+      }
+    }
 
     console.log("<<< New message from server to user.");
-    console.log("\tTo UserID:\t", msg.id);
-    console.log("\tMessage:\t", response);
+    console.log("To UserID:\t", msg.id);
+    console.log("Message:\t", response);
     console.log("");
     console.log("");
 
-    console.log("%%% Sending server response to user %%%");
-    console.log("\t...");
     io.to(msg.id).emit("server_message", response);
     console.log("%%% Message sent. %%%");
     console.log("");
     console.log("");
-
-    console.log("||| End of \"socket.on('user_message')\" in",
-        "\"/src/socket/server.socket.js\" |||");
-    console.log("");
-    console.log("");
-  });
-
-  socket.on("client-to-self", function(msg) {
-    console.log(">> << Message from client-to-self received\n");
-    console.log("Message:\t", msg);
-    io.to(msg.id).emit("client-to-self", msg);
-    console.log(">> Message forwarded to client id:", msg.id);
   });
 });
 

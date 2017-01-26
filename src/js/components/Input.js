@@ -42,6 +42,16 @@ var Input = React.createClass ({
         this.state.messages.push(extra_message);
         message.message = <Options />;
       }
+      else if (message.message === "show_accounts")
+      {
+        message.message = <FundList />;
+      }
+      else if (/show_data/.test(message.message))
+      {
+        var msg_split = message.message.split(":");
+        message.message = <DataList account={msg_split[1]}/>;
+      }
+
       this.state.messages.push(message);
       var elem = <MessageHistory messages={this.state.messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));

@@ -10,7 +10,7 @@ var Options = React.createClass ({
       message: "fund_list"
     };
 
-    socket.emit("client-to-self", message);
+    socket.emit("user_message", message);
   },
 
   render() {
