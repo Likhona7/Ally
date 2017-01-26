@@ -6,6 +6,7 @@ var nlp = require("../natural/server.nlp.js");
 var parse_options = require("./parse_options.js");
 
 var using_options = false;
+var options_choice = null;
 var account = null;
 var data = null;
 
@@ -18,6 +19,17 @@ io.on("connection", function(socket) {
 
   socket.on("user_message", function(msg)
   {
+    /*
+      Receive user message and deliver it back to user to confirm message
+      has been received.
+    */
+    var client_message = msg.message;
+    if (!client_message)
+    {
+      client_message = "Unable to deliver message.";
+    }
+    io.to(msg.id).emit("client-to-self", client_message);
+
     console.log(">>> New message from user to server.");
     console.log("From UserID:\t", msg.id);
     console.log("Message:\t", msg.message);
@@ -36,9 +48,33 @@ io.on("connection", function(socket) {
     }
     else
     {
-      if (msg.message === "fund_list")
+      if (!options_choice)
       {
-        response = "show_accounts";
+        options_choice = msg.message;
+
+        if (isNaN(options_choice))
+        {
+          response = "You've selected an invalid option. Could you please " +
+            "ensure that you've entered the number correctly? :)";
+          options_choice = null;
+        }
+        else
+        {
+          if (options_choice == 1)
+          {
+            response = "show_accounts";
+          }
+          else if (options_choice <= 4)
+          {
+            response = "handle_option:" + msg.message;
+          }
+          else
+          {
+            response = "You've selected an invalid option. Could you please " +
+              "ensure that you've entered the number correctly? :)";
+            options_choice = null;
+          }
+        }
       }
       else if (!account)
       {
@@ -65,7 +101,6 @@ io.on("connection", function(socket) {
 
       if (account && data)
       {
-        using_options = false;
         msg.message = account + " " + data;
         response = nlp.processMessage(msg);
 
@@ -75,6 +110,11 @@ io.on("connection", function(socket) {
             + "info you're looking for. Maybe try calling our CSC at " +
             "0860 000 654";
         }
+
+        using_options = false;
+        options_choice = null;
+        account = null;
+        data = null;
       }
     }
 

@@ -57,59 +57,15 @@ var Input = React.createClass ({
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
 
-    socket.on("client-to-self", (msg) => {
-      var list_to_show = null;
-      if (msg.message === "fund_list")
-      {
-        list_to_show = <FundList />;
-
-        let extra_message = {
-          message: "List my funds",
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
-
-        let message = {
-          message: list_to_show,
-          from: "server",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(message);
-      }
-      else if (msg.message === "data_list")
-      {
-        list_to_show = <DataList account={msg.account_choice} />;
-
-        let extra_message = {
-          message: "List my data options for " + msg.account_choice,
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
-
-        let message = {
-          message: list_to_show,
-          from: "server",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(message);
-      }
-      else if (msg.message === "send_request")
-      {
-        let extra_message = {
-          message: "Give me the " + msg.data + " for my " + msg.account_choice,
-          from: "user",
-          time: timer.chaTime()
-        }
-
-        this.state.messages.push(extra_message);
+    socket.on("client-to-self", (msg) =>
+    {
+      let message = {
+        message: msg,
+        from: "user",
+        time: timer.chaTime()
       }
 
+      this.state.messages.push(message);
       var elem = <MessageHistory messages={this.state.messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
@@ -147,9 +103,6 @@ var Input = React.createClass ({
 
     // Clear user input after emitting to socket
     this.setState( {inputValue: ""} );
-    this.state.messages.push(message);
-    var elem = <MessageHistory messages={this.state.messages} />;
-    ReactDOM.render(elem, document.getElementById("message_box"));
   },
 
   handleChange(event) {
