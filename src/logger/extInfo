@@ -1867,3 +1867,204 @@ User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minut
 
 
 
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 35 || Second: 54 || MiliSecond: 649]
+
+From User: hey
+NLP_[Stemmed Message]: hei
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 35 || Second: 54 || MiliSecond: 660]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 01 || MiliSecond: 732]
+
+From User: bvsdvdfvbsjfvbb
+NLP_[Stemmed Message]: bvsdvdfvbsjfvbb
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 01 || MiliSecond: 750]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 48 || MiliSecond: 946]
+
+From User: Oasis Crescent Equity Fund Start Market Value
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Stemmed Message]: oasi,crescent,equiti,fund,start,market,valu
+NLP_[Extracted Fund Name(s)]: Oasis Crescent Equity Fund
+NLP_[Extracted Fund Data]: StartMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Oasis Crescent Equity Fund
+NLP_[Data Response]: 447.696191
+NLP_[Final Response Before PregEx]: The Start Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Market Value for your Oasis Crescent Equity Fund is R447.696191 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Market Value for your Oasis Crescent Equity Fund is R447.696191 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 49 || MiliSecond: 86]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 58 || MiliSecond: 922]
+
+From User: ghjndjd
+NLP_[Stemmed Message]: ghjndjd
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 36 || Second: 58 || MiliSecond: 927]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 37 || Second: 40 || MiliSecond: 895]
+
+From User: Sanlam Investment Management Value Fund End Net Market Value
+NLP_[Stemmed Message]: sanlam,invest,manag,valu,fund,end,net,market,valu
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Sanlam Investment Management Value Fund
+NLP_[Extracted Fund Data]: EndNetMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Sanlam Investment Management Value Fund
+NLP_[Data Response]: 43506.628875
+NLP_[Final Response Before PregEx]: The End Net Market Value for your {account} is Currently at R{value} :)
+NLP_[Final Response After PregEx]: The End Net Market Value for your Sanlam Investment Management Value Fund is Currently at R43506.628875 :)
+NLP_[Program Failed]: False
+From ALLY: The End Net Market Value for your Sanlam Investment Management Value Fund is Currently at R43506.628875 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 37 || Second: 41 || MiliSecond: 18]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 42 || Second: 53 || MiliSecond: 915]
+
+From User: ,ytkyir
+NLP_[Stemmed Message]: ytkyir
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 42 || Second: 53 || MiliSecond: 925]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 43 || Second: 03 || MiliSecond: 156]
+
+From User: Cadiz Mastermind Fund Start Unallotted Market Value
+NLP_[Stemmed Message]: cadiz,mastermind,fund,start,unallot,market,valu
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Cadiz Mastermind Fund
+NLP_[Extracted Fund Data]: StartUnallottedMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Cadiz Mastermind Fund
+NLP_[Data Response]: 0.000000
+NLP_[Final Response Before PregEx]: The Start Unallotted Market Value for your {account} is R{value} :)
+NLP_[Program Failed]: False
+From ALLY: The Start Unallotted Market Value for your Cadiz Mastermind Fund is R0.000000 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 43 || Second: 03 || MiliSecond: 301]
+
+
+
+
+NLP_[Final Response After PregEx]: The Start Unallotted Market Value for your Cadiz Mastermind Fund is R0.000000 :)
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 43 || Second: 08 || MiliSecond: 476]
+
+From User: hey
+NLP_[Stemmed Message]: hei
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 43 || Second: 08 || MiliSecond: 491]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 44 || Second: 59 || MiliSecond: 621]
+
+From User: ab
+NLP_[Stemmed Message]: ab
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 44 || Second: 59 || MiliSecond: 634]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 45 || Second: 03 || MiliSecond: 661]
+
+From User: Cadiz Mastermind Fund Total Start Market Value Incl Unallotted
+NLP_[Stemmed Message]: cadiz,mastermind,fund,total,start,market,valu,incl,unallot
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Cadiz Mastermind Fund
+NLP_[Extracted Fund Data]: TotalStartMarketValueInclUnallotted
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Cadiz Mastermind Fund
+NLP_[Data Response]: 39160.871377
+NLP_[Final Response Before PregEx]: The Total Start Market Value Incl Unallotted for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Total Start Market Value Incl Unallotted for your Cadiz Mastermind Fund is R39160.871377 :)
+NLP_[Program Failed]: False
+From ALLY: The Total Start Market Value Incl Unallotted for your Cadiz Mastermind Fund is R39160.871377 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 45 || Second: 03 || MiliSecond: 804]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 45 || Second: 07 || MiliSecond: 509]
+
+From User: 17
+NLP_[Stemmed Message]: 17
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 26 || Hour: 15 || Minute: 45 || Second: 07 || MiliSecond: 519]
+
+
+
+

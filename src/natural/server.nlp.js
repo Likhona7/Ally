@@ -348,7 +348,7 @@ module.exports = {
 
     // Where the final response to the user will be stored
     var final_response = "";
-    var msg = message.message;
+    var msg = message.message.toString();
 
     var CurrentTime = getDateTime();
     var NLP_To_File = 'User Message Sent: ' + CurrentTime + '\n\n';
