@@ -17,6 +17,62 @@ export var socket = io.connect("http://localhost:3001", {
   "transports": ["websocket"]
 });
 
+///////////////////////////////////Voice Funtionality////////////////////////////////////////////
+var messages=[];
+var recognizing=false;
+var user_message="";
+var recognition = new window.webkitSpeechRecognition();
+recognition.continuous = true;
+recognition.onend = reset();
+
+
+recognition.onresult = function (event) {
+  for (var i = event.resultIndex; i < event.results.length; ++i) {
+    if (event.results[i].isFinal) {
+      //textarea.value += event.results[i][0].transcript;
+      user_message= event.results[i][0].transcript;
+      console.log(user_message);
+
+      let user_mssg = {
+        message: user_message,
+        from: "user",
+        id: socket.id
+      };
+      if(user_mssg.message!=undefined)
+      {
+        socket.emit("user_message", user_mssg);
+        messages.push(user_mssg);
+       var elem = <MessageHistory messages={messages} />;
+       ReactDOM.render(elem, document.getElementById("message_box"));
+      }
+
+    }
+  }
+}
+
+function reset() {
+  recognizing = false;
+
+}
+
+  function toggleStartStop()
+  {
+    console.log("called");
+    if (recognizing) {
+      recognition.stop();
+      reset();
+    } else {
+
+      recognition.start();
+      recognizing=true;
+
+    }
+  }
+
+
+//////////////////////////////////// End Voice Funtionality///////////////////////////////////////////
+
+
 var Input = React.createClass ({
 
   getInitialState() {
@@ -120,7 +176,7 @@ var Input = React.createClass ({
                     placeholder="Type message..." id="usr_input"
                     type="text" value={this.state.inputValue}
                     onChange={this.handleChange} onKeyPress={this.onKeyPress}/>
-                <button className="mic-button" onClick={this.onSend}><img src={mic}/></button>
+                <button className="mic-button" onClick={toggleStartStop}><img src={mic}/></button>
           </div>
         </div>
         <div className="col-xs-1"></div>

@@ -296,7 +296,9 @@ ul.newnav li.right {float: right;}
     color: white;
     }
 
-    .caret{}
+    .caret{
+      display:none;
+    }
 
     .App-header-hamburger ul li a:hover {
       color:#c53146;

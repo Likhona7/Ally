@@ -26,7 +26,7 @@
     background: white;
     width: 80%;
     overflow-y: scroll;
-    height: 50vh;
+    height: 49vh;
 }
 
 .Text-field {
@@ -339,23 +339,27 @@ button{
 
 /*Option list styles*/
 li {
-    list-style-type: none;
+    display:inline-block;
 }
 
 .list-options li {
-    text-decoration: none;
     margin bottom:40px;
+    color:white;
 
+}
+
+ol{
+  color: white;
 }
 
 .list-options a{
   font-size:15px;
-  color: #c53146;;
-  border-radius: 5px;
+  color: white;
+  border:1px solid white;
+  /*border-radius: 5px;*/
   padding:5px 10px 5px 10px;
-  background-color: white;
+  /*background-color: #c53146;*/
   transition: font-weight 0.2s ease;
-  color: #c53146;
   display: block;
   padding: 10px;
   margin: 0px;

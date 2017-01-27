@@ -8,11 +8,11 @@ export default class Home extends Component {
       <div className="App">
 
               <div className="App-intro">
-                <h1>ALLY IS HERE FOR YOU.</h1>
+                <h1>ALLIE IS HERE FOR YOU.</h1>
               </div>
               <div className="buttons_box">
                 <Link to="/chat">
-                  <div className="start_button"> Ask Ally Something...</div>
+                  <div className="start_button"> Ask Allie Something...</div>
                 </Link>
               </div>
 
