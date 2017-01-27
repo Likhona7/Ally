@@ -1,1 +1,1 @@
-rm src/logger/log src/logger/extInfo; touch src/logger/log src/logger/extInfo; sh kill_p.sh
+rm src/logger/log src/logger/extInfo src/logger/weather.json; touch src/logger/log src/logger/extInfo src/logger/weather.json; sh kill_p.sh

@@ -3,20 +3,36 @@ var app = require("express")();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 var nlp = require("../natural/server.nlp.js");
+var weather = require('weather-js');
+var fStream = require("fs");
+var sleeper = require("sleep");
+
+
+/*
+** Request Weather From Darksky
+*/
+
+var messageToLog = "";
+weather.find({search: '-33.9077974, 18.4227503', degreeType: 'C'}, function(err, result)
+{
+  console.log("IN THE LOOP\n");
+  if(err) console.log(err);
+  messageToLog = JSON.stringify(result, null, 2);
+  sleeper.sleep(5);
+});
 
 //  Define user message event handler
 io.on("connection", function(socket) {
   console.log("+++ New user connected.");
   console.log("\tUserID:\t", socket.id);
-  console.log("");
-  console.log("");
 
   socket.on("user_message", function(msg) {
     console.log("||| Start of \"socket.on('user_message')\" in",
-        "\"/src/socket/server.socket.js\" |||");
-    console.log("");
-    console.log("");
-
+        "\"/src/socket/server.socket.js\" |||\n\n");
+    fStream.writeFileSync('src/logger/weather.json', messageToLog, function(err)
+    {
+      if(err) throw err;
+    });
     console.log(">>> New message from user to server.");
     console.log("\tFrom UserID:\t", msg.id);
     console.log("\tMessage:\t", msg.message);
