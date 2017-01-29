@@ -67,6 +67,7 @@ io.on("connection", function(socket) {
           else if (options_choice <= 4)
           {
             response = "handle_option:" + msg.message;
+            using_options = false;
           }
           else
           {

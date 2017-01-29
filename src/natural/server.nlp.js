@@ -4,7 +4,6 @@ var natural = require('natural');
 var fStream = require("fs");
 var request = require('request');
 var stemmer = natural.PorterStemmer;
-var trainClassifier = require("./ClassifierTrainer.js");
 stemmer.attach();
 
 
@@ -126,11 +125,7 @@ function  getSimilarityCount(arr1, arr2)
 */
 function  getSimilarityRatio(arr1, arr2)
 {
-  var simCount = 0;
-  v// To add to window
-if (!window.Promise) {
-  window.Promise = Promise;
-} var similarity = 0;
+  var simCount = 0;var similarity = 0;
   var len1 = arr1.length;
   var len2 = arr2.length;
 

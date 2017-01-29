@@ -25,7 +25,7 @@ var recognition = null;
 
 if (!('webkitSpeechRecognition' in window) && !('mozSpeechRecognition' in window))
 {
-  console.log("Web Speech not supported.");
+  console.log("Web Speech API is not supported.");
 }
 else
 {
@@ -33,55 +33,58 @@ else
   console.log("Web Speech API loaded...");
   recognition.continuous = true;
   recognition.onend = reset();
-}
 
-
-recognition.onresult = function (event)
-{
-  for (var i = event.resultIndex; i < event.results.length; ++i)
+  recognition.onresult = function (event)
   {
-    if (event.results[i].isFinal)
+    for (var i = event.resultIndex; i < event.results.length; ++i)
     {
-      //textarea.value += event.results[i][0].transcript;
-      user_message = event.results[i][0].transcript;
-      console.log(user_message);
-
-      let user_mssg = {
-        message: user_message,
-        from: "user",
-        id: socket.id,
-        time: timer.chaTime()
-      };
-
-      if(user_mssg.message !== undefined)
+      if (event.results[i].isFinal)
       {
-        socket.emit("user_message", user_mssg);
-        messages.push(user_mssg);
-        var elem = <MessageHistory messages={messages} />;
-        ReactDOM.render(elem, document.getElementById("message_box"));
+        //textarea.value += event.results[i][0].transcript;
+        user_message = event.results[i][0].transcript;
+        console.log(user_message);
+
+        let user_mssg = {
+          message: user_message,
+          from: "user",
+          id: socket.id,
+          time: timer.chaTime()
+        };
+
+        if(user_mssg.message !== undefined)
+        {
+          socket.emit("user_message", user_mssg);
+          messages.push(user_mssg);
+          var elem = <MessageHistory messages={messages} />;
+          ReactDOM.render(elem, document.getElementById("message_box"));
+        }
       }
     }
   }
 }
 
-function reset() {
+function reset()
+{
   recognizing = false;
-
 }
 
-  function toggleStartStop()
+function toggleStartStop()
+{
+  console.log("Mic toggleStartStop called.");
+  if (recognition)
   {
-    console.log("called");
-    if (recognizing) {
+    if (recognizing)
+    {
       recognition.stop();
       reset();
-    } else {
-
+    }
+    else
+    {
       recognition.start();
-      recognizing=true;
-
+      recognizing = true;
     }
   }
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -92,7 +95,8 @@ var Input = React.createClass ({
     return( {inputValue: ""} );
   },
 
-  componentDidMount() {
+  componentDidMount()
+  {
     socket.on("server_message", (msg) => {
       let server_message = {
         message: msg,
@@ -109,15 +113,38 @@ var Input = React.createClass ({
           time: timer.chaTime()
         };
         messages.push(extra_message);
-        server_message = <Options />;
+        server_message.message = <Options />;
       }
-       //messages.push(extra_message);
+      else if (server_message.message === "show_accounts")
+      {
+        server_message.message = <FundList />;
+      }
+      else if (/show_data/.test(server_message.message))
+      {
+        var msg_split = server_message.message.split(":");
+        server_message.message = <DataList account={msg_split[1]}/>;
+      }
+
+       messages.push(server_message);
+      var elem = <MessageHistory messages={messages} />;
+      ReactDOM.render(elem, document.getElementById("message_box"));
+    });
+
+    socket.on("client-to-self", (msg) =>
+    {
+      let message = {
+        message: msg,
+        from: "user",
+        time: timer.chaTime()
+      }
+
+      messages.push(message);
       var elem = <MessageHistory messages={messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
   },
 
-  onKeyPress() {
+  onKeyPress(event) {
     if (event.key !== "Enter") {
       return;
     }
@@ -158,8 +185,9 @@ var Input = React.createClass ({
                     placeholder="Type message..." id="usr_input"
                     type="text" value={this.state.inputValue}
                     onChange={this.handleChange} onKeyPress={this.onKeyPress}/>
-                <input className="col-xs-1 send-button" type="submit"
-                    value="Send" id="send_button" onClick={toggleStartStop}/>
+                <button className="mic-button" onClick={toggleStartStop}>
+                  <img alt="Record Voice Note" src={mic} />
+                </button>
           </div>
         </div>
         <div className="col-xs-1"></div>

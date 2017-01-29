@@ -2,8 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import './Home.css';
 import {Link} from 'react-router';
-import menu from './menu.png';
-import { Button,MenuItem,DropdownButton, ButtonToolbar,Glyphicon,Dropdown } from 'react-bootstrap';
+import {MenuItem, ButtonToolbar, Glyphicon, Dropdown} from 'react-bootstrap';
 
 export default class Header extends Component{
 
