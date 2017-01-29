@@ -15,34 +15,48 @@ export var socket = io.connect("http://localhost:3001", {
 });
 
 ///////////////////////////////////////////////////////////////////////////////
-var messages=[];
-var recognizing=false;
-var user_message="";
-var recognition = new window.webkitSpeechRecognition();
-recognition.continuous = true;
-recognition.onend = reset();
+var messages = [];
+var recognizing = false;
+var user_message = "";
+var recognition = null;
+
+if (!('webkitSpeechRecognition' in window) && !('mozSpeechRecognition' in window))
+{
+  console.log("Web Speech not supported.");
+}
+else
+{
+  recognition = window.webkitSpeechRecognition || window.mozSpeechRecognition;
+  console.log("Web Speech API loaded...");
+  recognition.continuous = true;
+  recognition.onend = reset();
+}
 
 
-recognition.onresult = function (event) {
-  for (var i = event.resultIndex; i < event.results.length; ++i) {
-    if (event.results[i].isFinal) {
+recognition.onresult = function (event)
+{
+  for (var i = event.resultIndex; i < event.results.length; ++i)
+  {
+    if (event.results[i].isFinal)
+    {
       //textarea.value += event.results[i][0].transcript;
-      user_message= event.results[i][0].transcript;
+      user_message = event.results[i][0].transcript;
       console.log(user_message);
 
       let user_mssg = {
         message: user_message,
         from: "user",
-        id: socket.id
+        id: socket.id,
+        time: timer.chaTime()
       };
-      if(user_mssg.message!=undefined)
+
+      if(user_mssg.message !== undefined)
       {
         socket.emit("user_message", user_mssg);
         messages.push(user_mssg);
-       var elem = <MessageHistory messages={messages} />;
-       ReactDOM.render(elem, document.getElementById("message_box"));
+        var elem = <MessageHistory messages={messages} />;
+        ReactDOM.render(elem, document.getElementById("message_box"));
       }
-
     }
   }
 }
@@ -98,14 +112,6 @@ var Input = React.createClass ({
       var elem = <MessageHistory messages={messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
-  },
-
-  onSend() {
-    // Call onKeyPress to make life simple
-    let event = {
-      key: "Enter"
-    }
-    this.onKeyPress(event);
   },
 
   onKeyPress() {
