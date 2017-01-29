@@ -4,6 +4,8 @@ var natural = require('natural');
 var fStream = require("fs");
 var request = require('request');
 var stemmer = natural.PorterStemmer;
+var trainClassifier = require("./ClassifierTrainer.js");
+var isc = require("../spellChecker/ISCC/index.js");
 stemmer.attach();
 
 
@@ -23,6 +25,7 @@ var fund_data_trainer = fStream.readFileSync("src/trainers/fund_data_trainer.jso
 fund_data_trainer = JSON.parse(fund_data_trainer);
 var message_type_trainer = fStream.readFileSync("src/trainers/greeting_trainer.json");
 message_type_trainer = JSON.parse(message_type_trainer);
+
 
 
 /*
@@ -47,6 +50,18 @@ function logger_extInfo(messageToLog)
   });
 }
 
+
+/*
+** Correcting Misspelled Words
+** ISC: [I]n[S]ane [C]hecker  :)
+*/
+function ISC(U_Message)
+{
+  var returnWords = isc.sendToAlly(U_Message);
+  returnWords = returnWords.join(" ");
+  console.log("Return: ", returnWords);
+  return(returnWords);
+}
 
 /*
 ** Gets Current Date
@@ -74,6 +89,10 @@ function getDateTime() {
 
     var access_to_all = new Date();
     var mil = access_to_all.getMilliseconds();
+
+
+
+
 
     return " [Year: "+year + " || " + "Month: "+month + " || " + "Day: "+day + " || " + "Hour: "+hour + " || " + "Minute: "+min + " || " + "Second: " + sec + " || " + "MiliSecond: "+mil + "]"
 
@@ -157,7 +176,6 @@ function getFundName(msg_stem)
   for (var i = 0; i < fund_name_trainer.length; i++)
   {
     var similarity = getSimilarityCount(fund_name_trainer[i].example.tokenizeAndStem(true), msg_stem);
-
     if (similarity > best_similarity)
     {
       best_similarity = similarity;
@@ -348,7 +366,7 @@ module.exports = {
 
     // Where the final response to the user will be stored
     var final_response = "";
-    var msg = message.message.toString();
+    var msg = message.message.toLowerCase();
 
     var CurrentTime = getDateTime();
     var NLP_To_File = 'User Message Sent: ' + CurrentTime + '\n\n';
@@ -363,7 +381,12 @@ module.exports = {
     logger_log(UserToFile);
     logger_extInfo(UserToFile);
 
-    var msg_stem = msg.tokenizeAndStem(true);
+
+    var AC_message = ISC(msg);
+    var NLP_To_File = 'NLP_[Auto Corrected User Message]: ' + AC_message + '\n';
+    logger_extInfo(NLP_To_File);
+
+    var msg_stem = AC_message.tokenizeAndStem(true);
     NLP_To_File = "NLP_[Stemmed Message]: " + msg_stem + "\n";
     logger_extInfo(NLP_To_File);
 
@@ -472,7 +495,7 @@ module.exports = {
       logger_extInfo(NLP_To_File);
 
       final_response = final_response.replace(/\{account\}/g, fund_name_classification);
-      final_response = final_response.replace(/\{value\}/g, data_response);
+      final_response = final_response.replace(/\{value\}/g, Math.floor(data_response * 100) / 100);
 
       var NLP_To_File = "NLP_[Final Response After PregEx]: " + final_response + "\n";
       logger_extInfo(NLP_To_File);

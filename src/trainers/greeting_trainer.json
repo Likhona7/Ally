@@ -8,6 +8,114 @@
     "type": "hello"
   },
   {
+    "example": "",
+    "type": "hello"
+  },
+  {
+    "example": "greetings",
+    "type": "hello"
+  },
+  {
+    "example": "goodday",
+    "type": "hello"
+  },
+  {
+    "example": "Whats up",
+    "type": "hello"
+  },
+  {
+    "example": "howdy",
+    "type": "hello"
+  },
+  {
+    "example": "hiya",
+    "type": "hello"
+  },
+  {
+    "example": "Howzit",
+    "type": "hello"
+  },
+  {
+    "example": "Heita",
+    "type": "hello"
+  },
+  {
+    "example": "Hey man",
+    "type": "hello"
+  },
+  {
+    "example": "Sawubona",
+    "type": "hello"
+  },
+  {
+    "example": "Molo",
+    "type": "hello"
+  },
+  {
+    "example": "Unjani",
+    "type": "hello"
+  },
+  {
+    "example": "Thobela",
+    "type": "hello"
+  },
+  {
+    "example": "Dumela",
+    "type": "hello"
+  },
+  {
+    "example": "Bonjour",
+    "type": "hello"
+  },
+  {
+    "example": "I ni sogoma",
+    "type": "hello"
+  },
+  {
+    "example": "'As Salaam Alaikum",
+    "type": "hello"
+  },
+  {
+    "example": "Lumela",
+    "type": "hello"
+  },
+  {
+    "example": "Jambo",
+    "type": "hello"
+  },
+  {
+    "example": "Sànnu",
+    "type": "hello"
+  },
+  {
+    "example": "Ibaulachi",
+    "type": "hello"
+  },
+  {
+    "example": "Moni",
+    "type": "hello"
+  },
+  {
+    "example": "Olá",
+    "type": "hello"
+  },
+  {
+    "example": "Hallo",
+    "type": "hello"
+  },
+  {
+    "example": "Bawo",
+    "type": "hello"
+  },
+  {
+    "example": "Muli shani",
+    "type": "hello"
+  },
+  {
+    "example": "Mhoro",
+    "type": "hello"
+  },
+  {
     "example": "hello",
     "type": "hello"
   },
@@ -16,11 +124,19 @@
     "type": "hello"
   },
   {
+    "example": "hay",
+    "type": "hello"
+  },
+  {
     "example": "good morning",
     "type": "hello"
   },
   {
     "example": "good day",
+    "type": "hello"
+  },
+  {
+    "example": "good afternoon",
     "type": "hello"
   },
   {
