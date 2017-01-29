@@ -4,8 +4,9 @@ var natural = require('natural');
 var fStream = require("fs");
 var request = require('request');
 var stemmer = natural.PorterStemmer;
-var trainClassifier = require("./ClassifierTrainer.js");
 var isc = require("../spellChecker/ISCC/index.js");
+var weather = require('weather-js');
+var deasync = require("deasync");
 stemmer.attach();
 
 
@@ -390,6 +391,40 @@ module.exports = {
     NLP_To_File = "NLP_[Stemmed Message]: " + msg_stem + "\n";
     logger_extInfo(NLP_To_File);
 
+    /*
+      Check if user requested the weather, and return the weather.
+    */
+    if (arrayContains(msg_stem, "weather".tokenizeAndStem(true)))
+    {
+      /*
+      ** Request Weather From Darksky
+      */
+      var weather_result = null;
+      weather.find({search: '-33.9077974, 18.4227503', degreeType: 'C'}, function(err, result)
+      {
+        console.log("Retrieving weather\n");
+        if(err)
+        {
+          console.log("Error retrieveing the weather:", err);
+          weather = err;
+        }
+        else
+        {
+          weather_result = result;
+        }
+      });
+      while (!weather_result)
+      {
+        deasync.sleep(100);
+      }
+      console.log("The weather is:", weather_result[0].current);
+      final_response = "The temperature at Allan Gray's Cape Town office is " +
+        "currently " + weather_result[0].current.temperature + " degrees celcius with " +
+        weather_result[0].current.skytext + " skies. :)";
+
+      return (final_response);
+    }
+
     var message_type_classification = getGreetingType(msg_stem);
     var fund_name_classification = getFundName(msg_stem);
     var fund_data_classification = getFundData(msg_stem);
@@ -532,11 +567,11 @@ module.exports = {
 }
 
 
-var dictionary=function(statement)
+var dictionary = function(statement)
 {
-    var searchkeys=statement.split(" ");
-    var key1="";
-    var key2="";
+    var searchkeys = statement.split(" ");
+    var key1 = "";
+    var key2 = "";
 
     var fundDescDict = {
      allan: "Allan Gray Equity Fund",
@@ -549,21 +584,17 @@ var dictionary=function(statement)
      "mutual industrial":"Old Mutual Industrial Fund"
    };
 
-    var keysDict={
+    var keysDict ={
       "balance": "StartUnitBalance",
       "price":"StartUnitPrice",
       "ratio":"StartRatio",
       "market":"StartMarketValue"
-
     };
 
-    for(var i=0;i<searchkeys.length;i++)
+    for(var i = 0; i < searchkeys.length; i++)
     {
-
-
        if((fundDescDict[searchkeys[i].toLowerCase()])!=undefined)
        {
-
           key1+=fundDescDict[searchkeys[i].toLowerCase()]+",";
        }
        if((keysDict[searchkeys[i].toLowerCase()])!=undefined )
@@ -572,66 +603,4 @@ var dictionary=function(statement)
        }
     }
     return key1+""+key2;
-
 }
-
-
-
-
-
-
-
-
-
-
-var httpRequests= function(msg) {
-
-          var mssg=dictionary(msg);
-          console.log(mssg);
-          // var options = {
-          //
-          //       url:"http://localhost:3000/funds?fundReportingDescription="+mssg.split(",")[0],
-          //
-          //       headers: {
-          //           method:"GET",
-          //           json:true,
-          //       }
-          // };
-          //
-          //
-          // request.get(options).then(function(body) {
-          //     //var json = JSON.parse(body);
-          //     //console.log("tt: "+(body[0][mssg.split(",")[1]]))
-          //     return((body[0][mssg.split(",")[1]]));
-          // });
-
-
-
-         if(mssg.split(",")[1]!=undefined)
-         {
-           request({
-               url:"http://localhost:3000/funds?fundReportingDescription="+mssg.split(",")[0],
-               method:"GET",
-               json:true,
-
-
-             }, function (error,response,body,data)
-                {
-                     if(error)
-                     {
-                       console.log("Error");
-                       return error;
-                     }
-                     else
-                     {
-                       console.log(body[0][mssg.split(",")[1]]);
-                      return((body[0][mssg.split(",")[1]]));
-                      }
-                  });
-            }
-
-            else {
-              return "none";
-            }
-
-};
