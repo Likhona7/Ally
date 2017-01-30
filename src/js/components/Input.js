@@ -7,6 +7,7 @@ import Options from "./Options.js";
 import FundList from "./FundList.js";
 import DataList from "./DataList.js";
 import mic from './microphone-black-shape.svg';
+//var speech =require("native-speech");
 
 export var io = require("socket.io-client");
 
@@ -107,7 +108,7 @@ var Input = React.createClass ({
       if (server_message.message === "unknown")
       {
         let extra_message = {
-          message: "Sorry, but I'm not sure what you're asking for. " +
+          message: "I'm not sure what you're asking for. " +
             "Please choose one of the options below for more info :)",
           from: "server",
           time: timer.chaTime()
