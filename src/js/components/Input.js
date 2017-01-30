@@ -7,6 +7,7 @@ import Options from "./Options.js";
 import FundList from "./FundList.js";
 import DataList from "./DataList.js";
 import mic from './microphone-black-shape.svg';
+//var speech =require("native-speech");
 
 export var io = require("socket.io-client");
 
@@ -36,12 +37,14 @@ recognition.onresult = function (event) {
       let user_mssg = {
         message: user_message,
         from: "user",
-        id: socket.id
+        id: socket.id,
+        time:timer.chaTime()
       };
       if(user_mssg.message!=undefined)
       {
         socket.emit("user_message", user_mssg);
-        messages.push(user_mssg);
+        //speech.speak(user_mssg);
+        //messages.push(user_mssg);
        var elem = <MessageHistory messages={messages} />;
        ReactDOM.render(elem, document.getElementById("message_box"));
       }
@@ -90,12 +93,12 @@ var Input = React.createClass ({
       if (message.message === "unknown")
       {
         let extra_message = {
-          message: "Sorry, but I'm not sure what you're asking for. " +
+          message: "I'm not sure what you're asking for. " +
             "Please choose one of the options below for more info :)",
           from: "server",
           time: timer.chaTime()
         };
-        this.state.messages.push(extra_message);
+        messages.push(extra_message);
         message.message = <Options />;
       }
       else if (message.message === "show_accounts")
@@ -108,8 +111,8 @@ var Input = React.createClass ({
         message.message = <DataList account={msg_split[1]}/>;
       }
 
-      this.state.messages.push(message);
-      var elem = <MessageHistory messages={this.state.messages} />;
+      messages.push(message);
+      var elem = <MessageHistory messages={messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
 
@@ -121,8 +124,9 @@ var Input = React.createClass ({
         time: timer.chaTime()
       }
 
-      this.state.messages.push(message);
-      var elem = <MessageHistory messages={this.state.messages} />;
+
+      messages.push(message);
+      var elem = <MessageHistory messages={messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });
   },
