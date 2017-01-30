@@ -108,8 +108,8 @@ var Input = React.createClass ({
       if (server_message.message === "unknown")
       {
         let extra_message = {
-          message: "I'm not sure what you're asking for. " +
-            "Please choose one of the options below for more info :)",
+          message: "To find out more information, " +
+            "please choose one of the options below :)",
           from: "server",
           time: timer.chaTime()
         };
