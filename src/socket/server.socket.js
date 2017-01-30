@@ -69,6 +69,9 @@ io.on("connection", function(socket)
           {
             response = "handle_option:" + msg.message;
             using_options = false;
+            options_choice = null;
+            account = null;
+            data = null;
           }
           else
           {

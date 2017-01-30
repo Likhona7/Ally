@@ -1,6 +1,42 @@
 [
   {
     "example": "balance",
+    "type": "EndMarketValue"
+  },
+  {
+    "example": "total balance",
+    "type": "EndNetMarketValue"
+  },
+  {
+    "example": "end unit balance",
+    "type": "EndUnitBalance"
+  },
+  {
+    "example": "end unit price",
+    "type": "EndUnitPrice"
+  },
+  {
+    "example": "end market value",
+    "type": "EndMarketValue"
+  },
+  {
+    "example": "end ratio",
+    "type": "EndRatio"
+  },
+  {
+    "example": "total end market value",
+    "type": "TotalEndMarketValue"
+  },
+  {
+    "example": "end unallotted market value",
+    "type": "EndUnallottedMarketValue"
+  },
+  {
+    "example": "total end market value incl unallotted",
+    "type": "TotalEndMarketValueInclUnallotted"
+  },
+  {
+    "example": "end net market value",
     "type": "EndNetMarketValue"
   },
   {
@@ -32,34 +68,6 @@
     "type": "TotalStartMarketValueInclUnallotted"
   },
   {
-    "example": "end unit balance",
-    "type": "EndUnitBalance"
-  },
-  {
-    "example": "end unit price",
-    "type": "EndUnitPrice"
-  },
-  {
-    "example": "end market value",
-    "type": "EndMarketValue"
-  },
-  {
-    "example": "end ratio",
-    "type": "EndRatio"
-  },
-  {
-    "example": "total end market value",
-    "type": "TotalEndMarketValue"
-  },
-  {
-    "example": "end unallotted market value",
-    "type": "EndUnallottedMarketValue"
-  },
-  {
-    "example": "total end market value incl unallotted",
-    "type": "TotalEndMarketValueInclUnallotted"
-  },
-  {
     "example": "currency symbol",
     "type": "currencySymbol"
   },
@@ -74,9 +82,5 @@
   {
     "example": "start net market value",
     "type": "StartNetMarketValue"
-  },
-  {
-    "example": "end net market value",
-    "type": "EndNetMarketValue"
   }
 ]

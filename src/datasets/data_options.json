@@ -1,78 +1,22 @@
 [
   {
-    "ref": "Start Unit Balance",
+    "ref": "Unit Balance",
     "id": 1
   },
   {
-    "ref": "Start Unit Price",
+    "ref": "Unit Price",
     "id": 2
   },
   {
-    "ref": "Start Market Value",
+    "ref": "Market Value",
     "id": 3
   },
   {
-    "ref": "Start Ratio",
+    "ref": "Ratio",
     "id": 4
   },
   {
-    "ref": "Total Start Market Value",
+    "ref": "Net Market Value",
     "id": 5
-  },
-  {
-    "ref": "Start Unallotted Market Value",
-    "id": 6
-  },
-  {
-    "ref": "Total Start Market Value Incl Unallotted",
-    "id": 7
-  },
-  {
-    "ref": "End Unit Balance",
-    "id": 8
-  },
-  {
-    "ref": "End Unit Price",
-    "id": 9
-  },
-  {
-    "ref": "End Market Value",
-    "id": 10
-  },
-  {
-    "ref": "End Ratio",
-    "id": 11
-  },
-  {
-    "ref": "Total End Market Value",
-    "id": 12
-  },
-  {
-    "ref": "End Unallotted Market Value",
-    "id": 13
-  },
-  {
-    "ref": "Total End Market Value Incl Unallotted",
-    "id": 14
-  },
-  {
-    "ref": "Currency Symbol",
-    "id": 15
-  },
-  {
-    "ref": "Currency Name",
-    "id": 16
-  },
-  {
-    "ref": "Account Number",
-    "id": 17
-  },
-  {
-    "ref": "Start Net Market Value",
-    "id": 18
-  },
-  {
-    "ref": "End Net Market Value",
-    "id": 19
   }
 ]

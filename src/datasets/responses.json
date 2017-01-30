@@ -48,7 +48,7 @@
     "type": "EndUnitPrice"
   },
   {
-    "response": "The End Market Value for your {account} is R{value} :)",
+    "response": "Your current Balance (End Market Value) for your {account} is R{value} :)",
     "type": "EndMarketValue"
   },
   {
@@ -84,7 +84,7 @@
     "type": "StartNetMarketValue"
   },
   {
-    "response": "The End Net Market Value for your {account} is Currently at R{value} :)",
+    "response": "Your Total Balance (End Net Market Value) is currently R{value} :)",
     "type": "EndNetMarketValue"
   }
 ]

@@ -365,6 +365,8 @@ function handleRequest(msg_stem)
 module.exports = {
   processMessage: function(message) {
 
+    message.message += " ";
+
     // Where the final response to the user will be stored
     var final_response = "";
     var msg = message.message.toLowerCase();
@@ -394,7 +396,7 @@ module.exports = {
     /*
       Check if user requested the weather, and return the weather.
     */
-    if (arrayContains(msg_stem, "weather".tokenizeAndStem(true)))
+    if (arrayContains(msg_stem, "weather".tokenizeAndStem(true)) || arrayContains(msg_stem, "forecast".tokenizeAndStem(true)))
     {
       /*
       ** Request Weather From Darksky
@@ -406,7 +408,7 @@ module.exports = {
         if(err)
         {
           console.log("Error retrieveing the weather:", err);
-          weather = err;
+          weather_result = err;
         }
         else
         {

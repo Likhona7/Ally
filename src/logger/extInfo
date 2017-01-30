@@ -1,40 +1,88 @@
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 14 || Second: 49 || MiliSecond: 981]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 27 || Second: 34 || MiliSecond: 730]
 
-From User: jhf
-NLP_[Auto Corrected User Message]: hf
-NLP_[Stemmed Message]: hf
+From User: rtusj
+NLP_[Auto Corrected User Message]: rush
+NLP_[Stemmed Message]: rush
 NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
 NLP_[ALLY UNDERSTOOD REQUEST]: false
 From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 14 || Second: 50 || MiliSecond: 282]
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 27 || Second: 34 || MiliSecond: 999]
 
 
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 14 || Second: 59 || MiliSecond: 915]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 27 || Second: 50 || MiliSecond: 836]
 
-From User: weather
-NLP_[Auto Corrected User Message]: weather
-NLP_[Stemmed Message]: weather
+From User: absa smart alpha equity fund market value
+NLP_[Auto Corrected User Message]: absa smart alpha equity fund market value
+NLP_[Stemmed Message]: absa,smart,alpha,equiti,fund,market,valu
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Absa Smart Alpha Equity Fund
+NLP_[Extracted Fund Data]: StartMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Absa Smart Alpha Equity Fund
+NLP_[Data Response]: 1226.802678
+NLP_[Final Response Before PregEx]: The Start Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Market Value for your Absa Smart Alpha Equity Fund is R1226.8 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Market Value for your Absa Smart Alpha Equity Fund is R1226.8 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 27 || Second: 51 || MiliSecond: 107]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 28 || Second: 01 || MiliSecond: 887]
+
+From User: gtyoi
+NLP_[Auto Corrected User Message]: styli
+NLP_[Stemmed Message]: styli
 NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
 NLP_[ALLY UNDERSTOOD REQUEST]: false
 From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 15 || Second: 02 || MiliSecond: 830]
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 28 || Second: 02 || MiliSecond: 297]
 
 
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 15 || Second: 26 || MiliSecond: 147]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 29 || Second: 22 || MiliSecond: 461]
 
-From User: allan gray equity fund start ratio
-NLP_[Auto Corrected User Message]: allan gray equity fund start ratio
-NLP_[Stemmed Message]: allan,grai,equiti,fund,start,ratio
+From User: grindrod equity income growth fund market value
+NLP_[Auto Corrected User Message]: grindrod equity income growth fund market value
+NLP_[Stemmed Message]: grindrod,equiti,incom,growth,fund,market,valu
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Grindrod Equity Income Growth Fund
+NLP_[Extracted Fund Data]: StartMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Grindrod Equity Income Growth Fund
+NLP_[Data Response]: 0.000000
+NLP_[Final Response Before PregEx]: The Start Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Market Value for your Grindrod Equity Income Growth Fund is R0 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Market Value for your Grindrod Equity Income Growth Fund is R0 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 29 || Second: 22 || MiliSecond: 782]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 29 || Second: 41 || MiliSecond: 432]
+
+From User: ratio ag
+NLP_[Auto Corrected User Message]: ratio ag
+NLP_[Stemmed Message]: ratio,ag
 NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: Allan Gray Equity Fund
 NLP_[Extracted Fund Data]: StartRatio
@@ -49,144 +97,342 @@ NLP_[Final Response After PregEx]: The Start Ratio for your Allan Gray Equity Fu
 NLP_[Program Failed]: False
 From ALLY: The Start Ratio for your Allan Gray Equity Fund is 0%
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 15 || Second: 26 || MiliSecond: 587]
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 29 || Second: 41 || MiliSecond: 794]
 
 
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 15 || Second: 39 || MiliSecond: 314]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 30 || Second: 37 || MiliSecond: 433]
+
+From User: ratio
+NLP_[Auto Corrected User Message]: ratio
+NLP_[Stemmed Message]: ratio
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: EndRatio
+NLP_[Fund Name Classification]: Set To Default -> Allan Gray Equity Fund
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Allan Gray Equity Fund
+NLP_[Data Response]: 2.81
+NLP_[Final Response Before PregEx]: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! The End Ratio for your {account} is {value}%
+NLP_[Final Response After PregEx]: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! The End Ratio for your Allan Gray Equity Fund is 2.81%
+NLP_[Program Failed]: False
+From ALLY: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! The End Ratio for your Allan Gray Equity Fund is 2.81%
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 30 || Second: 37 || MiliSecond: 740]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 31 || Second: 13 || MiliSecond: 183]
 
 From User: weather
 NLP_[Auto Corrected User Message]: weather
 NLP_[Stemmed Message]: weather
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 36 || Second: 22 || MiliSecond: 659]
+
+From User: rftu
+NLP_[Auto Corrected User Message]: tutu
+NLP_[Stemmed Message]: tutu
 NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
 NLP_[ALLY UNDERSTOOD REQUEST]: false
 From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 15 || Second: 40 || MiliSecond: 62]
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 36 || Second: 22 || MiliSecond: 931]
 
 
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 20 || Second: 37 || MiliSecond: 88]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 41 || Second: 50 || MiliSecond: 922]
 
-From User: hey
-NLP_[Auto Corrected User Message]: hey
-NLP_[Stemmed Message]: hei
-NLP_[Extract Greeting Type]: hello
+From User: sfb
+NLP_[Auto Corrected User Message]: s
+NLP_[Stemmed Message]: s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
-NLP_[getGreetingType()]: Stemmed Message Recieved
-NLP_[Returned Greeting]: Hi!
 NLP_[ALLY UNDERSTOOD REQUEST]: false
-From ALLY: Hi! What would you like me to assist you with?
+From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 20 || Second: 37 || MiliSecond: 374]
-
-
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 41 || Second: 51 || MiliSecond: 176]
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 20 || Second: 45 || MiliSecond: 583]
 
-From User: what's the weather like?
-NLP_[Auto Corrected User Message]: whats the weather like
-NLP_[Stemmed Message]: what,the,weather,like
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 23 || Second: 01 || MiliSecond: 605]
 
-From User: weather
-NLP_[Auto Corrected User Message]: weather
-NLP_[Stemmed Message]: weather
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 24 || Second: 00 || MiliSecond: 968]
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 05 || MiliSecond: 50]
 
-From User: hey
-NLP_[Auto Corrected User Message]: hey
-NLP_[Stemmed Message]: hei
-NLP_[Extract Greeting Type]: hello
+From User: coronation top 20 fund ratio
+NLP_[Auto Corrected User Message]: coronation top s fund ratio
+NLP_[Stemmed Message]: coron,top,s,fund,ratio
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Coronation Top 20 Fund
+NLP_[Extracted Fund Data]: EndRatio
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Coronation Top 20 Fund
+NLP_[Ally Was Polite]: False
+NLP_[Data Response]: 6.04
+NLP_[Final Response Before PregEx]: The End Ratio for your {account} is {value}%
+NLP_[Final Response After PregEx]: The End Ratio for your Coronation Top 20 Fund is 6.04%
+NLP_[Program Failed]: False
+From ALLY: The End Ratio for your Coronation Top 20 Fund is 6.04%
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 05 || MiliSecond: 397]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 26 || MiliSecond: 245]
+
+From User: asfvb
+NLP_[Auto Corrected User Message]: asf
+NLP_[Stemmed Message]: asf
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
-NLP_[getGreetingType()]: Stemmed Message Recieved
-NLP_[Returned Greeting]: Hi!
 NLP_[ALLY UNDERSTOOD REQUEST]: false
-From ALLY: Hi! What would you like me to assist you with?
+From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 24 || Second: 01 || MiliSecond: 231]
-
-
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 26 || MiliSecond: 639]
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 24 || Second: 03 || MiliSecond: 898]
 
-From User: weather
-NLP_[Auto Corrected User Message]: weather
-NLP_[Stemmed Message]: weather
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 25 || Second: 16 || MiliSecond: 143]
 
-From User: hey
-NLP_[Auto Corrected User Message]: hey
-NLP_[Stemmed Message]: hei
-NLP_[Extract Greeting Type]: hello
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 35 || MiliSecond: 448]
+
+From User: g
+NLP_[Auto Corrected User Message]: g
+NLP_[Stemmed Message]: g
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
-NLP_[getGreetingType()]: Stemmed Message Recieved
-NLP_[Returned Greeting]: Hi!
 NLP_[ALLY UNDERSTOOD REQUEST]: false
-From ALLY: Hi! What would you like me to assist you with?
+From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 25 || Second: 16 || MiliSecond: 411]
-
-
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 35 || MiliSecond: 621]
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 25 || Second: 29 || MiliSecond: 917]
 
-From User: what's the weather like?
-NLP_[Auto Corrected User Message]: whats the weather like
-NLP_[Stemmed Message]: what,the,weather,like
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 27 || Second: 04 || MiliSecond: 803]
 
-From User: hey
-NLP_[Auto Corrected User Message]: hey
-NLP_[Stemmed Message]: hei
-NLP_[Extract Greeting Type]: hello
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 46 || MiliSecond: 579]
+
+From User: counterpoint met value fund market value
+NLP_[Auto Corrected User Message]: counterpoint met value fund market value
+NLP_[Stemmed Message]: counterpoint,met,valu,fund,market,valu
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Counterpoint MET Value Fund
+NLP_[Extracted Fund Data]: EndMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Counterpoint MET Value Fund
+NLP_[Data Response]: 0.000000
+NLP_[Final Response Before PregEx]: Your current Balance (End Market Value) for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: Your current Balance (End Market Value) for your Counterpoint MET Value Fund is R0 :)
+NLP_[Program Failed]: False
+From ALLY: Your current Balance (End Market Value) for your Counterpoint MET Value Fund is R0 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 42 || Second: 46 || MiliSecond: 953]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 33 || MiliSecond: 468]
+
+From User: sab 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
-NLP_[getGreetingType()]: Stemmed Message Recieved
-NLP_[Returned Greeting]: Hi!
 NLP_[ALLY UNDERSTOOD REQUEST]: false
-From ALLY: Hi! What would you like me to assist you with?
+From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 27 || Second: 05 || MiliSecond: 16]
-
-
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 33 || MiliSecond: 771]
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 27 || Second: 09 || MiliSecond: 276]
 
-From User: what's the weather like?
-NLP_[Auto Corrected User Message]: whats the weather like
-NLP_[Stemmed Message]: what,the,weather,like
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 28 || Second: 15 || MiliSecond: 508]
 
-From User: hey
-NLP_[Auto Corrected User Message]: hey
-NLP_[Stemmed Message]: hei
-NLP_[Extract Greeting Type]: hello
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 41 || MiliSecond: 758]
+
+From User: oasis crescent equity fund net market value 
+NLP_[Auto Corrected User Message]: oasis crescent equity fund net market value s
+NLP_[Stemmed Message]: oasi,crescent,equiti,fund,net,market,valu,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Oasis Crescent Equity Fund
+NLP_[Extracted Fund Data]: StartNetMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Oasis Crescent Equity Fund
+NLP_[Data Response]: 39160.871377
+NLP_[Final Response Before PregEx]: The Start Net Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Net Market Value for your Oasis Crescent Equity Fund is R39160.87 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Net Market Value for your Oasis Crescent Equity Fund is R39160.87 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 42 || MiliSecond: 118]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 49 || MiliSecond: 120]
+
+From User: bgv h  
+NLP_[Auto Corrected User Message]: g h s s
+NLP_[Stemmed Message]: g,h,s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
 NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
 NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
-NLP_[getGreetingType()]: Stemmed Message Recieved
-NLP_[Returned Greeting]: Hi!
 NLP_[ALLY UNDERSTOOD REQUEST]: false
-From ALLY: Hi! What would you like me to assist you with?
+From ALLY: unknown
 
-User Message Recieved:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 28 || Second: 15 || MiliSecond: 763]
-
-
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 49 || MiliSecond: 515]
 
 
-User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 28 || Second: 18 || MiliSecond: 737]
 
-From User: what's the weather like?
-NLP_[Auto Corrected User Message]: whats the weather like
-NLP_[Stemmed Message]: what,the,weather,like
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 55 || MiliSecond: 231]
+
+From User: coronation top 20 fund net market value 
+NLP_[Auto Corrected User Message]: coronation top s fund net market value s
+NLP_[Stemmed Message]: coron,top,s,fund,net,market,valu,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Coronation Top 20 Fund
+NLP_[Extracted Fund Data]: StartNetMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Coronation Top 20 Fund
+NLP_[Data Response]: 39160.871377
+NLP_[Final Response Before PregEx]: The Start Net Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Net Market Value for your Coronation Top 20 Fund is R39160.87 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Net Market Value for your Coronation Top 20 Fund is R39160.87 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 44 || Second: 55 || MiliSecond: 621]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 45 || Second: 42 || MiliSecond: 84]
+
+From User: 5 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 45 || Second: 42 || MiliSecond: 412]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 45 || Second: 55 || MiliSecond: 318]
+
+From User: 5 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 45 || Second: 55 || MiliSecond: 651]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 46 || Second: 53 || MiliSecond: 563]
+
+From User: info 
+NLP_[Auto Corrected User Message]: info s
+NLP_[Stemmed Message]: info,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 46 || Second: 53 || MiliSecond: 845]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 20 || MiliSecond: 384]
+
+From User: grindrod equity income growth fund net market value 
+NLP_[Stemmed Message]: grindrod,equiti,incom,growth,fund,net,market,valu,s
+NLP_[Auto Corrected User Message]: grindrod equity income growth fund net market value s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Grindrod Equity Income Growth Fund
+NLP_[Extracted Fund Data]: StartNetMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Grindrod Equity Income Growth Fund
+NLP_[Data Response]: 39160.871377
+NLP_[Final Response Before PregEx]: The Start Net Market Value for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: The Start Net Market Value for your Grindrod Equity Income Growth Fund is R39160.87 :)
+NLP_[Program Failed]: False
+From ALLY: The Start Net Market Value for your Grindrod Equity Income Growth Fund is R39160.87 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 20 || MiliSecond: 855]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 43 || MiliSecond: 69]
+
+From User: 3 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 43 || MiliSecond: 469]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 49 || MiliSecond: 167]
+
+From User: cadiz mastermind fund market value 
+NLP_[Auto Corrected User Message]: cadiz mastermind fund market value s
+NLP_[Stemmed Message]: cadiz,mastermind,fund,market,valu,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Cadiz Mastermind Fund
+NLP_[Extracted Fund Data]: EndMarketValue
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Cadiz Mastermind Fund
+NLP_[Data Response]: 3980.230356
+NLP_[Final Response Before PregEx]: Your current Balance (End Market Value) for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: Your current Balance (End Market Value) for your Cadiz Mastermind Fund is R3980.23 :)
+NLP_[Program Failed]: False
+From ALLY: Your current Balance (End Market Value) for your Cadiz Mastermind Fund is R3980.23 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 10 || Minute: 47 || Second: 49 || MiliSecond: 492]
+
+
+
+
