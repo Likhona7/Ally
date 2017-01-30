@@ -157,3 +157,436 @@ User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minut
 
 From ALLY: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! Your Total Balance is currently R43506.62 :)
 
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 49 || Second: 01 || MiliSecond: 345]
+
+From User: bonjour 
+NLP_[Auto Corrected User Message]: bonjour s
+NLP_[Stemmed Message]: bonjour,s
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 49 || Second: 01 || MiliSecond: 576]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 49 || Second: 36 || MiliSecond: 30]
+
+From User: dumela 
+NLP_[Auto Corrected User Message]: duel s
+NLP_[Stemmed Message]: duel,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 49 || Second: 36 || MiliSecond: 549]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 55 || Second: 28 || MiliSecond: 698]
+
+From User: bjhk 
+NLP_[Auto Corrected User Message]: beck s
+NLP_[Stemmed Message]: beck,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 55 || Second: 29 || MiliSecond: 108]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 56 || Second: 23 || MiliSecond: 191]
+
+From User: khf 
+NLP_[Auto Corrected User Message]: hf s
+NLP_[Stemmed Message]: hf,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 56 || Second: 23 || MiliSecond: 510]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 58 || Second: 05 || MiliSecond: 505]
+
+From User: s<v 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 58 || Second: 05 || MiliSecond: 765]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 59 || Second: 43 || MiliSecond: 386]
+
+From User: ssva 
+NLP_[Auto Corrected User Message]: siva s
+NLP_[Stemmed Message]: siva,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 12 || Minute: 59 || Second: 43 || MiliSecond: 643]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 04 || Second: 13 || MiliSecond: 853]
+
+From User: what is my total balance? 
+NLP_[Auto Corrected User Message]: what is my total balance s
+NLP_[Stemmed Message]: what,is,my,total,balanc,s
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Data]: EndNetMarketValue
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 04 || Second: 14 || MiliSecond: 844]
+
+
+
+
+From ALLY: 
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 05 || Second: 49 || MiliSecond: 572]
+
+From User: total balance 
+NLP_[Auto Corrected User Message]: total balance s
+NLP_[Stemmed Message]: total,balanc,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: EndNetMarketValue
+NLP_[Fund Name Classification]: Set To Default -> Allan Gray Equity Fund
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Allan Gray Equity Fund
+NLP_[Data Response]: 43506.628875
+NLP_[Final Response Before PregEx]: Your Total Balance is currently R{value} :)
+NLP_[Final Response After PregEx]: Your Total Balance is currently R43506.62 :)
+NLP_[Program Failed]: False
+From ALLY: Your Total Balance is currently R43506.62 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 05 || Second: 49 || MiliSecond: 907]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 06 || Second: 03 || MiliSecond: 680]
+
+From User: what's my total balance? 
+NLP_[Auto Corrected User Message]: whats my total balance s
+NLP_[Stemmed Message]: what,my,total,balanc,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: EndNetMarketValue
+NLP_[Fund Name Classification]: Set To Default -> Allan Gray Equity Fund
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Allan Gray Equity Fund
+NLP_[Data Response]: 43506.628875
+NLP_[Final Response Before PregEx]: Your Total Balance is currently R{value} :)
+NLP_[Final Response After PregEx]: Your Total Balance is currently R43506.62 :)
+NLP_[Program Failed]: False
+From ALLY: Your Total Balance is currently R43506.62 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 06 || Second: 05 || MiliSecond: 4]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 07 || Second: 36 || MiliSecond: 743]
+
+From User: hey 
+NLP_[Stemmed Message]: hei,s
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 07 || Second: 36 || MiliSecond: 974]
+
+
+
+
+NLP_[Auto Corrected User Message]: hey s
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 27 || MiliSecond: 299]
+
+From User: hey 
+NLP_[Auto Corrected User Message]: hey s
+NLP_[Stemmed Message]: hei,s
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 27 || MiliSecond: 500]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 33 || MiliSecond: 520]
+
+From User: what's my balance? 
+NLP_[Auto Corrected User Message]: whats my balance s
+NLP_[Stemmed Message]: what,my,balanc,s
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Data]: EndMarketValue
+NLP_[Fund Name Classification]: Set To Default -> Allan Gray Equity Fund
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Allan Gray Equity Fund
+NLP_[Data Response]: 1179.843258
+NLP_[Final Response Before PregEx]: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! Your current Balance for your {account} is R{value} :)
+NLP_[Final Response After PregEx]: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! Your current Balance for your Allan Gray Equity Fund is R1179.84 :)
+NLP_[Program Failed]: False
+From ALLY: I'm assuming you're referring to your Allan Gray Equity Fund? In that case here you go! Your current Balance for your Allan Gray Equity Fund is R1179.84 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 34 || MiliSecond: 780]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 52 || MiliSecond: 589]
+
+From User: what's my total balance? 
+NLP_[Auto Corrected User Message]: whats my total balance s
+NLP_[Stemmed Message]: what,my,total,balanc,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: EndNetMarketValue
+NLP_[Fund Name Classification]: Set To Default -> Allan Gray Equity Fund
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Allan Gray Equity Fund
+NLP_[Data Response]: 43506.628875
+NLP_[Final Response Before PregEx]: Your Total Balance is currently R{value} :)
+NLP_[Final Response After PregEx]: Your Total Balance is currently R43506.62 :)
+NLP_[Program Failed]: False
+From ALLY: Your Total Balance is currently R43506.62 :)
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 09 || Second: 53 || MiliSecond: 881]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 10 || Second: 24 || MiliSecond: 90]
+
+From User: kjhg 
+NLP_[Auto Corrected User Message]: king s
+NLP_[Stemmed Message]: king,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 10 || Second: 24 || MiliSecond: 370]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 12 || Second: 09 || MiliSecond: 931]
+
+From User: adfb 
+NLP_[Auto Corrected User Message]: abb s
+NLP_[Stemmed Message]: abb,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 12 || Second: 10 || MiliSecond: 184]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 19 || Second: 55 || MiliSecond: 375]
+
+From User: jhgf 
+NLP_[Auto Corrected User Message]: hf s
+NLP_[Stemmed Message]: hf,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 19 || Second: 55 || MiliSecond: 609]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 20 || Second: 21 || MiliSecond: 776]
+
+From User: sagr 
+NLP_[Auto Corrected User Message]: sag s
+NLP_[Stemmed Message]: sag,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 20 || Second: 22 || MiliSecond: 156]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 21 || Second: 42 || MiliSecond: 651]
+
+From User: <sv 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 21 || Second: 42 || MiliSecond: 939]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 21 || Second: 56 || MiliSecond: 473]
+
+From User: <sv 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 21 || Second: 56 || MiliSecond: 838]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 22 || Second: 16 || MiliSecond: 114]
+
+From User: asdv 
+NLP_[Auto Corrected User Message]: as s
+NLP_[Stemmed Message]: as,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 22 || Second: 16 || MiliSecond: 487]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 24 || Second: 59 || MiliSecond: 257]
+
+From User: sv 
+NLP_[Auto Corrected User Message]: sv s
+NLP_[Stemmed Message]: sv,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Sygnia Value Fund
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: I'm not quite sure what information you're asking for. Could you please also mention what you're looking for in your Sygnia Value Fund?
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 24 || Second: 59 || MiliSecond: 455]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 25 || Second: 09 || MiliSecond: 836]
+
+From User: sdfb 
+NLP_[Auto Corrected User Message]: dab s
+NLP_[Stemmed Message]: dab,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 25 || Second: 10 || MiliSecond: 217]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 27 || Second: 03 || MiliSecond: 469]
+
+From User: jf 
+NLP_[Auto Corrected User Message]: s s
+NLP_[Stemmed Message]: s,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: unknown
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 27 || Second: 03 || MiliSecond: 716]
+
+
+
+
+User Message Sent:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 27 || Second: 12 || MiliSecond: 83]
+
+From User: coronation top 20 fund ratio 
+NLP_[Auto Corrected User Message]: coronation top s fund ratio s
+NLP_[Stemmed Message]: coron,top,s,fund,ratio,s
+NLP_[Extract Greeting Type]: NO GREETING TYPE FOUND IN USER MESSAGE
+NLP_[Extracted Fund Name(s)]: Coronation Top 20 Fund
+NLP_[Extracted Fund Data]: EndRatio
+NLP_[ALLY UNDERSTOOD REQUEST]: true
+NLP_[Polite Request List]: can,i,pleas,have,my,give,me,you,get,tell
+NLP_[Polite Request]: false
+NLP_[Ally Was Polite]: False
+NLP_[URL]: http://localhost:3002/funds?fundReportingDescription=Coronation Top 20 Fund
+NLP_[Data Response]: 6.04
+NLP_[Final Response Before PregEx]: The End Ratio for your {account} is {value}%
+NLP_[Final Response After PregEx]: The End Ratio for your Coronation Top 20 Fund is 6.04%
+NLP_[Program Failed]: False
+From ALLY: The End Ratio for your Coronation Top 20 Fund is 6.04%
+
+User Message Recieved:  [Year: 2017 || Month: 01 || Day: 30 || Hour: 13 || Minute: 27 || Second: 12 || MiliSecond: 559]
+
+
+
+

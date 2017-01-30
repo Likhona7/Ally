@@ -10,6 +10,11 @@ var MessageHistory = React.createClass({
     );
   },
 
+  componentDidUpdate() {
+    var objDiv = document.getElementById('message_box');
+    objDiv.scrollTop = objDiv.scrollHeight;
+  },
+
   render() {
     return(
       <div className="message_history" id="message_history">

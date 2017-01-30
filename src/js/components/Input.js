@@ -125,8 +125,27 @@ var Input = React.createClass ({
         var msg_split = server_message.message.split(":");
         server_message.message = <DataList account={msg_split[1]}/>;
       }
+      else if (/handle_option/.test(server_message.message))
+      {
+        var msg_split = server_message.message.split(":");
+        if (msg_split[1] == "2")
+        {
+          server_message.message = "Navigating to Product Info page...";
+          window.open("https://www.allangray.co.za/what-we-offer/investing-with-us/", "_blank");
+        }
+        if (msg_split[1] == "3")
+        {
+          server_message.message = "Navigating to Allan Gray's Google Maps location...";
+          window.open("https://www.google.co.za/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=active&q=allan+gray+location&rflfq=1&rlha=0&rllag=-33922312,18416057,1727&tbm=lcl&tbs=lf_msr:-1,lf_od:-1,lf_oh:-1,lf_pqs:EAE,lf:1,lf_ui:2", "_blank");
+        }
+        if (msg_split[1] == "4")
+        {
+          server_message.message = "Navigating to Frequently Asked Questions page...";
+          window.open("https://www.allangray.co.za/faq/#1", "_blank");
+        }
+      }
 
-       messages.push(server_message);
+      messages.push(server_message);
       var elem = <MessageHistory messages={messages} />;
       ReactDOM.render(elem, document.getElementById("message_box"));
     });

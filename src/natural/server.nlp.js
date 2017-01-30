@@ -453,10 +453,17 @@ module.exports = {
       that the Allan Gray account is requested. Also add a message to
       final_response stating that the user should be more specific.
     */
-    if (!fund_name_classification && fund_data_classification)
+    if (!fund_name_classification && fund_data_classification && fund_data_classification != "EndNetMarketValue")
     {
       final_response = "I'm assuming you're referring to your Allan Gray " +
         "Equity Fund? In that case here you go! ";
+      fund_name_classification = "Allan Gray Equity Fund";
+      NLP_To_File = "NLP_[Fund Name Classification]: Set To Default -> " + fund_name_classification + "\n";
+      logger_extInfo(NLP_To_File);
+    }
+    else if (!fund_name_classification && fund_data_classification && fund_data_classification == "EndNetMarketValue")
+    {
+      final_response += "";
       fund_name_classification = "Allan Gray Equity Fund";
       NLP_To_File = "NLP_[Fund Name Classification]: Set To Default -> " + fund_name_classification + "\n";
       logger_extInfo(NLP_To_File);
@@ -564,6 +571,14 @@ module.exports = {
     var NLP_To_File = 'User Message Recieved: ' + CurrentTime + '\n\n\n\n\n';
     logger_extInfo(NLP_To_File);
 
+    if (message_type_classification)
+    {
+      deasync.sleep(800);
+    }
+    else
+    {
+      deasync.sleep(1200);
+    }
     return (final_response);
   }
 }
