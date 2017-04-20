@@ -190,3 +190,21 @@ User Message Sent:  [Year: 2017 || Month: 01 || Day: 29 || Hour: 20 || Minute: 2
 From User: what's the weather like?
 NLP_[Auto Corrected User Message]: whats the weather like
 NLP_[Stemmed Message]: what,the,weather,like
+User Message Sent:  [Year: 2017 || Month: 04 || Day: 20 || Hour: 19 || Minute: 25 || Second: 54 || MiliSecond: 540]
+
+From User: hi
+NLP_[Auto Corrected User Message]: hi
+NLP_[Stemmed Message]: hi
+NLP_[Extract Greeting Type]: hello
+NLP_[Extracted Fund Name(s)]: NO FUND NAMES FOUND IN USER STRING
+NLP_[Extracted Fund Data]: NO FUND DATA FOUND IN USER MESSAGE
+NLP_[getGreetingType()]: Stemmed Message Recieved
+NLP_[Returned Greeting]: Hi!
+NLP_[ALLY UNDERSTOOD REQUEST]: false
+From ALLY: Hi! What would you like me to assist you with?
+
+User Message Recieved:  [Year: 2017 || Month: 04 || Day: 20 || Hour: 19 || Minute: 25 || Second: 54 || MiliSecond: 818]
+
+
+
+
